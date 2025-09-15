@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Infinite Craft Editor</title>
+<style>
+  body {
+    background: #111;
+    color: white;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #gameCanvas {
+    background: black;
+    margin-bottom: 10px;
+  }
+  button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #jsonArea {
+    width: 90%;
+    height: 150px;
+    background: #222;
+    color: lime;
+    font-family: monospace;
+    padding: 10px;
+    border: 2px solid lime;
+    overflow: auto;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="gameCanvas" width="1200" height="800"></canvas> <!-- doble tamaño -->
+<button id="addBtn" style="background-color:#4CAF50; color:white;">[+] Add Item</button>
+<button id="downloadBtn" style="background-color:#2196F3; color:white;">💾 Download .IC</button>
+<textarea id="jsonArea" placeholder="JSON will appear here..."></textarea>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
