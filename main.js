@@ -203,7 +203,7 @@ function openEditModal(itemIndex = null) {
       id: parseInt(idInput.value),
       text: textInput.value,
       emoji: emojiInput.value,
-      discovery: discoveryInput.checked
+      discovered: discoveryInput.checked
     };
 
     if (!currentData.items) currentData.items = [];
@@ -245,3 +245,4 @@ downloadButton.addEventListener("click", () => {
     alert("❌ Error generating .IC: " + err);
   }
 });
+
